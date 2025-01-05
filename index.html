@@ -89,8 +89,16 @@
     <script>
         function checkPassword(pista) {
             const passwordInput = document.getElementById(`password${pista}`).value;
-            const passwords = { '1': '10', '2': '20', '3': '40' };
-            const links = { '1': 'https://media.discordapp.net/attachments/1149820421252861952/1324621292766494730/download.png?ex=6778d136&is=67777fb6&hm=f08c6a0e6c318d7e08f36de5028117f8fade2453489f0872a05eec062ce96ac7&=&format=webp&quality=lossless&width=503&height=350', '2': 'https://example.com/pista2', '3': 'https://example.com/pista3' };
+            const passwords = { 
+                '1': '19011967', 
+                '2': '20', 
+                '3': '40' 
+            };
+            const links = { 
+                '1': 'https://www.dropbox.com/scl/fi/yjfeh29rfnj26h642jcy2/1.rar?rlkey=iammd2lkj70cwxvp78br25po9&st=d9vt4afx&dl=0', 
+                '2': 'https://example.com/pista2', 
+                '3': 'https://example.com/pista3' 
+            };
 
             if (passwordInput === passwords[pista]) {
                 window.location.href = links[pista];
@@ -129,5 +137,6 @@
     </footer>
 </body>
 </html>
+
 
     
