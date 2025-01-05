@@ -90,14 +90,10 @@
         function checkPassword(pista) {
             const passwordInput = document.getElementById(`password${pista}`).value;
             const passwords = { 
-                '1': '19011967', 
-                '2': '20', 
-                '3': '40' 
+                '1': '19011967'
             };
             const links = { 
-                '1': 'https://www.dropbox.com/scl/fi/yjfeh29rfnj26h642jcy2/1.rar?rlkey=iammd2lkj70cwxvp78br25po9&st=d9vt4afx&dl=0', 
-                '2': 'https://example.com/pista2', 
-                '3': 'https://example.com/pista3' 
+                '1': 'https://www.dropbox.com/scl/fi/yjfeh29rfnj26h642jcy2/1.rar?rlkey=iammd2lkj70cwxvp78br25po9&st=d9vt4afx&dl=0'
             };
 
             if (passwordInput === passwords[pista]) {
@@ -122,14 +118,6 @@
         <p>Pista 1:</p>
         <input type="text" id="password1" placeholder="Digite a senha">
         <input type="button" value="Entrar" onclick="checkPassword('1')">
-
-        <p>Pista 2:</p>
-        <input type="text" id="password2" placeholder="Digite a senha">
-        <input type="button" value="Entrar" onclick="checkPassword('2')">
-
-        <p>Pista 3:</p>
-        <input type="text" id="password3" placeholder="Digite a senha">
-        <input type="button" value="Entrar" onclick="checkPassword('3')">
     </div>
 
     <footer>
@@ -137,3 +125,4 @@
     </footer>
 </body>
 </html>
+
