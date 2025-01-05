@@ -90,10 +90,12 @@
         function checkPassword(pista) {
             const passwordInput = document.getElementById(`password${pista}`).value;
             const passwords = { 
-                '1': '19011967'
+                '1': '19011967',
+                '2': 'sorumbatico'
             };
             const links = { 
-                '1': 'https://www.dropbox.com/scl/fi/yjfeh29rfnj26h642jcy2/1.rar?rlkey=iammd2lkj70cwxvp78br25po9&st=d9vt4afx&dl=0'
+                '1': 'https://www.dropbox.com/scl/fi/yjfeh29rfnj26h642jcy2/1.rar?rlkey=iammd2lkj70cwxvp78br25po9&st=d9vt4afx&dl=0',
+                '2': 'https://www.dropbox.com/scl/fi/example/2.rar?rlkey=examplekey&st=d9vt4afx&dl=0' // Substitua com o link correto
             };
 
             if (passwordInput === passwords[pista]) {
@@ -120,9 +122,14 @@
         <input type="button" value="Entrar" onclick="checkPassword('1')">
     </div>
 
+    <div class="password-container">
+        <p>Pista 2:</p>
+        <input type="text" id="password2" placeholder="Digite a senha">
+        <input type="button" value="Entrar" onclick="checkPassword('2')">
+    </div>
+
     <footer>
         <p>© 2025 - Gemadinha. Estou sempre observando.</p>
     </footer>
 </body>
 </html>
-
